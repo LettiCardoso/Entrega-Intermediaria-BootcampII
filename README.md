@@ -1,3 +1,11 @@
+## 🌍 Deploy
+A aplicação está oficialmente publicada e pode ser acessada publicamente através do link do GitHub Pages abaixo:
+
+### 🔗 Acessar o FocusFlow Web em Produção
+[![Focus Flow](https://img.shields.io/badge/-GitHub%20Pages-blue)](https://letticardoso.github.io/Entrega-Intermediaria-BootcampII/FocusFlow/)
+
+
+
 # FocusFlow Web ⏱️
 
 O **FocusFlow** é uma aplicação web interativa focada em produtividade, projetada para ajudar estudantes e profissionais a organizarem seus ciclos de estudo e manterem o foco. A aplicação conta com um cronômetro no estilo Pomodoro e integra-se a uma API pública externa para fornecer frases motivacionais dinâmicas sempre que um novo ciclo de foco é iniciado.
@@ -80,10 +88,6 @@ O cronômetro iniciará a contagem regressiva tradicional de 25 minutos, o statu
 
 Use o botão Parar caso precise interromper o ciclo antes do tempo.
 
-## 🌍 Deploy
-A aplicação está oficialmente publicada e pode ser acessada publicamente através do link do GitHub Pages abaixo:
-
-🔗 Acessar o FocusFlow Web em Produção
 
 
 ---
