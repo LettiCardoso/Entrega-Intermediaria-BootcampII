@@ -26,8 +26,8 @@ jobs:
       - name: Run Cypress Integration Tests
         uses: cypress-io/github-action@v6
         with:
-          # Inicia o servidor web na pasta do projeto antes do teste começar
           start: http-server FocusFlow -p 8080
-          # Avisa o Cypress onde a aplicação está rodando
           wait-on: 'http://localhost:8080'
+          # Força o Cypress do GitHub a olhar para o servidor embutido
+          config: baseUrl=http://localhost:8080
           spec: cypress/e2e/focusflow.spec.js
