@@ -1,6 +1,6 @@
 describe('Teste de Integração - FocusFlow Web', () => {
     beforeEach(() => {
-        // Usa apenas a barra para indicar a raiz do servidor atual
+        // Como o servidor já abre dentro da pasta FocusFlow, a raiz é o index.html
         cy.visit('/');
     });
 

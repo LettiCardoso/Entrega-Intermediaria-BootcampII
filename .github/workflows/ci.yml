@@ -19,15 +19,12 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: |
-          npm install
-          npm install -g http-server
+        run: npm install
 
       - name: Run Cypress Integration Tests
         uses: cypress-io/github-action@v6
         with:
-          start: http-server FocusFlow -p 8080
+          # Usa um módulo simples do Node (npx) para servir a pasta FocusFlow na porta 8080
+          start: npx serve FocusFlow -p 8080
           wait-on: 'http://localhost:8080'
-          # Força o Cypress do GitHub a olhar para o servidor embutido
-          config: baseUrl=http://localhost:8080
           spec: cypress/e2e/focusflow.spec.js
