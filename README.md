@@ -18,7 +18,7 @@ Para clonar o projeto e instalar as dependências de desenvolvimento (Cypress e 
 
 ```bash
 # Clonar o repositório
-git clone [https://github.com/LettiCardoso/Entrega-Intermediaria-BootcampII.git](https://github.com/LettiCardoso/Entrega-Intermediaria-BootcampII.git)
+git clone [https://github.com/LettiCardoso/Entrega-Intermediaria-BootcampII.git]
 
 # Entrar na pasta do projeto
 cd Entrega-Intermediaria-BootcampII
