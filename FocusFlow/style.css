@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #9fa4c4 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 24px !important;
+    transition: transform 0.3s ease;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.timer-display {
+    border: 2px solid rgba(0,0,0,0.05);
+    transition: all 0.5s ease;
+}
+
+/* Estado ativo: muda de cor igual ao Tkinter antigo */
+.timer-active {
+    background-color: #e8f5e9 !important;
+    border-color: #a5d6a7 !important;
+}
+
+.timer-active h2 {
+    color: #2e7d32 !important;
+}
+
+.timer-paused {
+    background-color: #fff3e0 !important;
+    border-color: #ffe0b2 !important;
+}
+
+.timer-paused h2 {
+    color: #ef6c00 !important;
+}
+
+.form-control:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 0 0.25rem rgba(42, 82, 152, 0.25);
+}
