@@ -1,0 +1,33 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main, entrega-intermediaria ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm install -g http-server
+
+      - name: Run Cypress Integration Tests
+        uses: cypress-io/github-action@v6
+        with:
+          # Inicia o servidor web na pasta do projeto antes do teste começar
+          start: http-server FocusFlow -p 8080
+          # Avisa o Cypress onde a aplicação está rodando
+          wait-on: 'http://localhost:8080'
+          spec: cypress/e2e/focusflow.spec.js
